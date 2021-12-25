@@ -17,8 +17,8 @@ import VideoItem from './videoItem'
 const VideoList = ({ videos, onSelectVideo }) => { // destructured props obj
     const listOfVideoItems = videos.map(video => {
         return (
-            <div className="ui list">
-                <VideoItem key={video.id.videoId} videoObj={video} onSelectVideo={onSelectVideo} />
+            <div className="ui list" key={video.id.videoId}>
+                <VideoItem videoObj={video} onSelectVideo={onSelectVideo} />
             </div>
         )
     })
