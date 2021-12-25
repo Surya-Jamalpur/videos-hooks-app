@@ -20,7 +20,7 @@ const VideoSearchBar = ({ whenSearchSubmit }) => {
                     <input type="text"
                         placeholder="Search Images"
                         value={term}
-                        onChange={(e) => this.onSearchValueChange(e)} />
+                        onChange={(e) => onSearchValueChange(e)} />
                 </div>
             </form>
         </div>
